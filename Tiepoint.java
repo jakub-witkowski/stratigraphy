@@ -1,13 +1,13 @@
 public class Tiepoint {
-    private String name; // ogólna nazwa punktu węzłowego
+    int id; // ogólna nazwa punktu węzłowego
     String type; // pmag, nannofossil, etc.
     String label; // szczegółowa nazwa punktu węzłowego
     double minDepth; // upper depth range (mbsf, cmbsf, etc.)
     double maxDepth; // lower depth range (mbsf, cmbsf, etc.)
     double age; // age in million years ago
 
-    public Tiepoint(String name, String type, String label, double minDepth, double maxDepth, double age) {
-        this.name = name;
+    public Tiepoint(int id, String type, String label, double minDepth, double maxDepth, double age) {
+        this.id = id;
         this.type = type;
         this.label = label;
         this.minDepth = minDepth;

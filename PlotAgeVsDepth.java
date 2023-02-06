@@ -4,29 +4,29 @@ public class PlotAgeVsDepth {
     public static void main(String[] args) {
         Site site = new Site("1050", "A,C");
 
-        Tiepoint tiepoint0 = new Tiepoint("Tiepoint 0", "pmag", "B C19n", 4.2, 11.23, 41.39);
+        Tiepoint tiepoint0 = new Tiepoint(0, "pmag", "B C19n", 4.2, 11.23, 41.39);
 
-        Tiepoint tiepoint1 = new Tiepoint("Tiepoint 1", "pmag", "B C19r", 24.14, 26.41, 42.30);
+        Tiepoint tiepoint1 = new Tiepoint(1, "pmag", "B C19r", 24.14, 26.41, 42.30);
 
-        Tiepoint tiepoint2 = new Tiepoint("Tiepoint 2", "pmag", "B C20n", 61.62, 62.19, 43.43);
+        Tiepoint tiepoint2 = new Tiepoint(2, "pmag", "B C20n", 61.62, 62.19, 43.43);
 
-        Tiepoint tiepoint3 = new Tiepoint("Tiepoint 3", "pmag", "B C20r", 137.27, 140.28, 45.72);
+        Tiepoint tiepoint3 = new Tiepoint(3, "pmag", "B C20r", 137.27, 140.28, 45.72);
 
-        Tiepoint tiepoint4 = new Tiepoint("Tiepoint 4", "pmag", "B C21n", 151.603, 153.190, 47.35);
+        Tiepoint tiepoint4 = new Tiepoint(4, "pmag", "B C21n", 151.603, 153.190, 47.35);
 
-        Tiepoint tiepoint5 = new Tiepoint("Tiepoint 5", "nanno", "B NP14a", 151.603, 153.190, 49.11);
+        Tiepoint tiepoint5 = new Tiepoint(5, "nanno", "B NP14a", 151.603, 153.190, 49.11);
 
-        Tiepoint tiepoint6 = new Tiepoint("Tiepoint 6", "pmag", "B C22n", 153.71, 154.43, 49.34);
+        Tiepoint tiepoint6 = new Tiepoint(6, "pmag", "B C22n", 153.71, 154.43, 49.34);
 
-        Tiepoint tiepoint7 = new Tiepoint("Tiepoint 7", "pmag", "T C23n", 182.657, 183.359, 50.63);
+        Tiepoint tiepoint7 = new Tiepoint(7, "pmag", "T C23n", 182.657, 183.359, 50.63);
 
-        Tiepoint tiepoint8 = new Tiepoint("Tiepoint 8", "nanno", "B C. crassus", 193.2, 194.64, 51.64);
+        Tiepoint tiepoint8 = new Tiepoint(8, "nanno", "B C. crassus", 193.2, 194.64, 51.64);
 
-        Tiepoint tiepoint9 = new Tiepoint("Tiepoint 9", "nanno", "B NP12", 193.2, 194.64, 53.7);
+        Tiepoint tiepoint9 = new Tiepoint(9, "nanno", "B NP12", 193.2, 194.64, 53.7);
 
-        Tiepoint tiepoint10 = new Tiepoint("Tiepoint 10", "pmag", "B C24n", 198.37, 199.08, 53.98);
+        Tiepoint tiepoint10 = new Tiepoint(10, "pmag", "B C24n", 198.37, 199.08, 53.98);
 
-        Tiepoint tiepoint = new Tiepoint(" ", "pmag", " ", 198.37, 199.08, 53.98); // repeat last tiepoint
+        Tiepoint tiepoint = new Tiepoint(11, "pmag", " ", 198.37, 199.08, 53.98); // repeat last tiepoint
 
         double[] depths = {
                 Tiepoint.averageDepth(tiepoint0.minDepth, tiepoint0.maxDepth),
